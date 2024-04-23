@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,88 +14,128 @@
     <link rel="stylesheet" href="snap.css"/>
   </head>
   <body>
-      <!-- Navbar -->
-        <nav class="navbar">
-          <div class="navbar-img">
-            <a href="#">
-              <img src="./images/logo.svg" alt="logo"/>
-            </a>            
+    <!-- Navbar -->
+    <div class="full-nav">
+      <div class="navbar-img">
+        <a href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <a href="#" class="menu-show">
+          <img src="images/icon-menu.svg" alt="logos">
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="menu-item">
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropdown-link" onclick="featuresList()">Features <img src="images/icon-arrow-down.svg"
+                  alt="" class="down-icon"></a>
+              <div class="dropdown-menu" id="myDropdown0">
+                <a href="#">
+                  <img src="images/icon-todo.svg" alt="icon-todo">
+                  Todo List
+                </a>
+                <a href="#">
+                  <img src="images/icon-calendar.svg" alt="icon-calendar">
+                  Calander
+                </a>
+                <a href="#">
+                  <img src="images/icon-reminders.svg" alt="icon-reminders">
+                  Reminders
+                </a>
+                <a href="#">
+                  <img src="images/icon-planning.svg" alt="icon-planning">
+                  Planning
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropdown-link" onclick="companyData()">Company <img src="images/icon-arrow-down.svg" alt=""
+                  class="down-icon2"></a>
+              <div class="dropdown-menu1" id="myDropdown1">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-btn">
+        <button>Login</button>
+        <button class="navb-btn">Register</button>
+      </div>
+    </div>
+        
+    <!-- sidebar -->
+    
+    <div>
+      <nav class="nav-bar">
+        <ul class="sidebar">
+          <li class="menu-close"><img height="20px" width="20px" src="images/icon-close-menu.svg" alt=""></li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropdown-link" onclick="featuresList()">Features <img src="images/icon-arrow-down.svg"
+                  alt="" class="down-icon"></a>
+              <div class="dropdown-menu" id="myDropdown0">
+                <a href="#">
+                  <img src="images/icon-todo.svg" alt="icon-todo">
+                  Todo List
+                </a>
+                <a href="#">
+                  <img src="images/icon-calendar.svg" alt="icon-calendar">
+                  Calander
+                </a>
+                <a href="#">
+                  <img src="images/icon-reminders.svg" alt="icon-reminders">
+                  Reminders
+                </a>
+                <a href="#">
+                  <img src="images/icon-planning.svg" alt="icon-planning">
+                  Planning
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropdown-link" onclick="companyData()">Company <img src="images/icon-arrow-down.svg" alt=""
+                  class="down-icon2"></a>
+              <div class="dropdown-menu1" id="myDropdown1">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <div class="nav-bttn">
+            <div class="navsbtn">
+              <button>Login</button>
+              <button class="navb-btn">Register</button>
+            </div>
+    
           </div>
-          <div class="Navbar__Link Navbar__Link-toggle">
-            <a href="#"><img src="./images/menu_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""></a>
-          </div>
-          <div class="menu-item">
-            <ul>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="dropdown-link"
-                    onclick="featuresList()">Features
-                    <img
-                      src="./images/icon-arrow-down.svg"
-                      alt="icon-arrow-down"
-                      class="down-icon" 
-                  /></a>
-                  <div class="dropdown-menu" id="myDropdown0" >
-                    <a href="#"
-                      ><img src="./images/icon-todo.svg" alt="icon-todo" /> Todo
-                      List</a
-                    >
-                    <a href="#"
-                      ><img
-                        src="./images/icon-calendar.svg"
-                        alt="icon-calendar"
-                      />
-                      Calender</a
-                    >
-                    <a href="#"
-                      ><img
-                        src="./images/icon-reminders.svg"
-                        alt="icon-reminders"
-                      />
-                      Reminders</a
-                    >
-                    <a href="#"
-                      ><img
-                        src="./images/icon-planning.svg"
-                        alt="icon-planning"
-                      />
-                      Planning</a
-                    >
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown">
-                  <a href="#" class="dropdown-link" onclick="companyData()"
-                    >Company
-                    <img
-                      src="./images/icon-arrow-down.svg"
-                      alt="icon-arrow-down"
-                      class="down-icon2"
-                  /></a>
-                  <div class="dropdown-menu1" id="myDropdown1">
-                    <a href="#">History</a>
-
-                    <a href="#">Our Team</a>
-
-                    <a href="#">Blog</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav-btn">
-            <button type="button">Login</button>
-            <button type="button" class="navb-btn">Register</button>
-          </div>
-        </nav>
-
+        </ul>
+    
+      </nav>
+    
+    </div>
+            
+        
       <!-- Mid section -->
       <div class="section">
         <div class="sub-section">
@@ -103,7 +144,9 @@
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <button type="button" class="section-btn">Learn more</button>
+          <div>
+            <button type="button" class="section-btn">Learn more</button>
+          </div>
           <div class="section-foot">
             <img src="./images/client-databiz.svg" alt="icon-databiz" />
             <img src="./images/client-audiophile.svg" alt="icon-audiophile" />
